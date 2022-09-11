@@ -14,8 +14,14 @@ def main():
     mc = MissionariesAndCannibals(init_state, goal_state)
     sa = SearchAlgorithm(mc)
     print('BFS')
-    goal_node = sa.bfs()
-    goal_node.pretty_print_solution(True)
+    goal_node = sa.bfs(statistics=True)
+    goal_node.pretty_print_solution(verbose = True)
+
+    sa = SearchAlgorithm(mc)
+    print('DFS')
+    goal_node = sa.dfs(statistics=True)
+    goal_node.pretty_print_solution(verbose = True)
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,21 @@
+BFS
+----------------------------
+Elapsed time (s):  0.003243
+Solution found at depth:  10
+Number of nodes explored:  52
+Cost of solution:  10
+Estimated effective branching factor:  5.2
+
+DFS
+----------------------------
+Elapsed time (s):  0.001348
+Solution found at depth:  10
+Number of nodes explored:  23
+Cost of solution:  10
+Estimated effective branching factor:  2.3000000000000003
+
+If check for already visited nodes is removed, then the  prgram does not terminate. This is because it will always choose the same move which does not lead to a goal state.
+
+BFS:
+- nodes visited prior to adding check: 3820
+- nodes visited after adding check: 22
